@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css">
+    <title>Jovian System</title>
+</head>
+<body>
+  <div class="progress-bar-container">
+    <label for="progress-bar" id="lbl-pb">Loading...</label>
+    <progress id="progress-bar" value="0" max="100"></progress>
+  </div>
+
+  <main>    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAboutMe" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h1 style="visibility: hidden;">afkjsaf</h1>
+        <button type="button" class="btn-close" id="offcanvas-cls-btn" onclick="cls_btn();" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class= "container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <img src="https://picsum.photos/id/237/250/250"
+                    class="rounded-circle mb-5 wow bounceInLeft rollIn"
+                    data-wow-delay="0.2s">
+                <h2 class="my-2" style="color: #ffc107;">Helu, <span class="mov"> </span></h2>
+                <h2 class="my-2" style="color: #ffc107;">I'm a 'job-title_here'</h2>
+                <div class="icons">
+                  <a href="https://github.com/falconeer01"><i class="fa fa-brands fa-github wow bounceInLeft rollIn" data-wow-delay="0.2s" style="font-size: 200%; margin:10% 15% 10% 0;" id="cb"></i></a>
+                  <a href="#"><i class="fa fa-brands fa-linkedin wow bounceInLeft rollIn" data-wow-delay="0.2s" style="font-size: 200%; margin:10% 15% 10% 0;" id="cb"></i></a>
+                  <a href="#"><i class="fa fa-brands fa-twitter wow bounceInLeft rollIn" data-wow-delay="0.2s" style="font-size: 200%; margin:10% 15% 10% 0;" id="cb"></i></a>
+                  <a href="#"><i class="fa fa-brands fa-facebook wow bounceInLeft rollIn" data-wow-delay="0.2s" style="font-size: 200%; margin:10% 15% 10% 0;" id="cb"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <h3 style="color: #ffc107">About me</h3>
+              <div id="aboutme">
+                <p class="lead my-3">
+                  hmmmm<span class="mov2"> </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasResume" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasExampleLabel" style="color: #ffc107">Resume</h3>
+        <button type="button" class="btn-close" onclick="cls_btn();" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div class="edu-card">
+            <div class="card p-5 my-5">
+              <div class="card-body py-5">
+                <h3 class="mb-5" style="color: #ffc107">Education</h3>
+                <ul>
+                  <li><div class="edu-1">
+                    <div class="card p-5 my-5">
+                      <div class="card-body py-5">
+                        <img src="https://picsum.photos/id/237/250/250" alt="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum sunt omnis nostrum assumenda dolorem distinctio corrupti voluptatem, ipsa harum illum nesciunt molestiae animi itaque quibusdam repellat fugit. At et, voluptatum repellat cupiditate qui, quia vero quod, tempore maiores fugiat autem labore quidem repellendus. Incidunt ipsam unde laboriosam mollitia at aspernatur rem earum odit voluptate placeat assumenda magnam, nesciunt omnis distinctio vel! Sed tempora, distinctio, officia dolor amet sint cumque nostrum quaerat tempore dolores, sequi error saepe! Provident iste impedit eos magnam saepe! Doloremque earum aut atque, sint repellat autem illo expedita nisi soluta minus, sit ut provident nobis ab!
+                      </div>
+                    </div>
+                  </div>
+                  </li>
+                  <li><div class="edu-2">
+                    <div class="card p-5 my-5">
+                      <div class="card-body py-5">
+                        This is some text within a card body.
+                      </div>
+                    </div>
+                  </div>
+                  </li>
+                  <li><div class="edu-3">
+                    <div class="card p-5 my-5">
+                      <div class="card-body py-5">
+                        This is some text within a card body.
+                      </div>
+                    </div>
+                  </div>
+                  </li>
+                </ul>                  
+              </div>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="card p-5 my-5">
+              <div class="card-body py-5">
+                <h3 style="color: #ffc107">Experience</h3>
+                <ul>
+                  <li><div class="edu-1">
+                    <div class="card p-5 my-5">
+                      <div class="card-body py-5">
+                        This is some text within a card body.
+                      </div>
+                    </div>
+                  </div>
+                  </li>
+                  <li><div class="edu-2">
+                    <div class="card p-5 my-5">
+                      <div class="card-body py-5">
+                        This is some text within a card body.
+                      </div>
+                    </div>
+                  </div>
+                  </li>
+                  <li><div class="edu-3">
+                    <div class="card p-5 my-5">
+                      <div class="card-body py-5">
+                        This is some text within a card body.
+                      </div>
+                    </div>
+                  </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="card p-5 my-5">
+              <div class="card-body py-5">
+                <h3 style="color: #ffc107">Skills</h3>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+                <button type="button" class="btn btn-warning m-1">Info</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPortfolio" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasExampleLabel" style="color: #ffc107">Works</h3>
+        <button type="button" class="btn-close" onclick="cls_btn();" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card my-5">
+                <a href="#"><img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasContact" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasBottomLabel" style="color: #ffc107">Contact me</h3>
+        <button type="button" class="btn-close" onclick="cls_btn();" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body small">
+        <div class="contianer">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6"><form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="exampleInputName" class="form-label">Name</label>
+                      <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                    </div>
+                    <button type="button" class="btn btn-outline-warning">Send</button>
+                  </form>
+                </div>
+                  <div class="col-6">
+                    <div class="message-box">
+                      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" style="height: 30%;" rows="5"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="container mt-4" style="text-align: center;">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" id="cb">
+                      <div class="card-body">
+                        <i class="fa fa-solid fa-location-arrow" style="font-size: 30px; margin: auto;"></i>               
+                        <h5 class="card-title mt-5">City</h5>
+                      </div>
+                    </div>
+                </div>                 
+                <div class="col-sm-4">
+                  <a href="tel:4444444">
+                    <div class="card">
+                      <div class="card-body" id="cb">
+                        <i class="fa fa-solid fa-phone" style="font-size: 30px; margin: auto;"></i>
+                        <h5 class="card-title mt-5">444-4-444</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="mailto:omrcndmrl041@hotmail.com">
+                    <div class="card" id="cb">
+                      <div class="card-body">
+                        <i class="fa fa-solid fa-at" style="font-size: 30px; margin: auto;"></i>                        
+                        <h5 class="card-title mt-5">e-mail</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+    
+
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "../node_modules/three/build/three.module.js"
+          }
+        }
+      </script>
+      <script src="../js/three.js"></script>
+      <script src="../js/three_mmi.js"></script>
+      <script src="../js/wow.min.js"></script>
+      <script type ="module" src="main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".mov",{
+        strings: [,"i'm falan filan"] ,
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+        })
+
+        var typed2 = new Typed(".mov2",{
+        strings: [,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, debitis voluptas ullam inventore eveniet iste officia fugiat explicabo dolores eos rem commodi quas ab! Voluptatum quia consectetur, quas, corporis ipsum omnis suscipit maxime, quasi ipsam nisi repellat voluptatem nulla! Cupiditate, culpa laboriosam hic odio similique asperiores corrupti fugit, et tempora fugiat nam. Atque dolor aliquam vitae, velit sint sed asperiores sapiente dicta quasi ipsa non et similique error. At possimus inventore quisquam recusandae fugit dolore architecto ducimus. Officia possimus ea iste omnis accusantium itaque magnam, commodi velit, harum natus quis! Rerum vel doloremque quidem voluptates ullam facilis itaque maiores dolor?"] ,
+        typeSpeed: 20,
+        loop: false
+        })
+
+        function cls_btn(){
+          document.getElementById("offcanvasAboutMe").className = "offcanvas offcanvas-start hiding";
+          document.getElementById("offcanvasPortfolio").className = "offcanvas offcanvas-start hiding";
+          document.getElementById("offcanvasResume").className = "offcanvas offcanvas-start hiding";
+          document.getElementById("offcanvasContact").className = "offcanvas offcanvas-bottom hiding";
+        }
+    </script>
+</body>
+</html>

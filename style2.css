@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    height: 100px;
+    color: white; 
+}
+
+canvas {
+    /* display: block; */
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+ 
+
+main {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 750px !important;
+    --bs-offcanvas-height: 300px !important;
+    --bs-offcanvas-bg: rgba(78, 78, 74, 0.418) !important;
+}
+
+/* .fa{
+    margin-right: 48px;
+    margin-top: 50px;
+} */
+
+.card-body{
+    padding: 100px 0px 100px 0px;
+}
+
+.card{
+    --bs-card-bg: rgba(128, 128, 0, 0.288) !important;
+}
+
+#exampleInputEmail1, #exampleInputName{
+    height: 30px !important;
+}
+
+a{
+    color: white;
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: #ffc107;
+    text-decoration: none;
+}
+
+#aboutme{
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#cb{
+    color: white;
+    height: 100%;
+}
+
+#cb:hover{
+    color: #ffc107;
+}
