@@ -30,9 +30,9 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const light = new THREE.PointLight(0xFFFFFF, 1, 10000);
 light.position.set(8,30,30);
 scene.add(light);
-const sphereSize = 1;
-const pointLightHelper = new THREE.PointLightHelper( light, sphereSize );
-scene.add( pointLightHelper );
+// const sphereSize = 1;
+// const pointLightHelper = new THREE.PointLightHelper( light, sphereSize );
+// scene.add( pointLightHelper );
 
 //responsive canvas
 window.addEventListener('resize', () => {
@@ -115,44 +115,72 @@ callistoSystem.add(callistoMesh);
 jovianSystem.add(callistoSystem);
 
 //loadingScreen?
-function loadModel() {
+// function loadModel() {
 
-    object.traverse( function ( child ) {
+//     object.traverse( function ( child ) {
 
-        if ( child.isMesh ) child.material.map = first;
-        if ( child.isMesh ) child.material.map = second;
-        if ( child.isMesh ) child.material.map = third;
-        if ( child.isMesh ) child.material.map = fourth;
-        if ( child.isMesh ) child.material.map = fifth;
+//         if ( child.isMesh ) child.material.map = first;
+//         if ( child.isMesh ) child.material.map = second;
+//         if ( child.isMesh ) child.material.map = third;
+//         if ( child.isMesh ) child.material.map = fourth;
+//         if ( child.isMesh ) child.material.map = fifth;
 
-    } );
+//     } );
 
-    scene.add( object );
+//     scene.add( object );
 
-}
-const manager = new THREE.LoadingManager(loadModel);
-const loader = new THREE.TextureLoader( manager );
-const first = loader.load('callistoTexture.webp');
-const second = loader.load('europaTexture.jpg');
-const third = loader.load('ganymedeTexture.jpg');
-const fourth = loader.load('ioTexture.jpg');
-const fifth = loader.load('jupTexture.jpg');
+// }
+// const manager = new THREE.LoadingManager(loadModel);
+// const loader = new THREE.TextureLoader( manager );
+// const first = loader.load('callistoTexture.webp');
+// const second = loader.load('europaTexture.jpg');
+// const third = loader.load('ganymedeTexture.jpg');
+// const fourth = loader.load('ioTexture.jpg');
+// const fifth = loader.load('jupTexture.jpg');
 
-const progressBar = document.getElementById('progress-bar');
-manager.onProgress = function ( url, itemsLoaded, itemsTotal ) {
-	// console.log(`Loading file: ${url}.\nLoaded ${itemsLoaded} of ${itemsTotal} files.`);
-    progressBar.value = (itemsLoaded/itemsTotal)*100;
-};
+// const pbc = document.getElementById("container");
 
-const progressBarContainer = document.querySelector('.progress-bar-container');
-manager.onLoad = function ( ) {
-	// console.log( 'Loading complete!');
-    progressBarContainer.style.display='none';
-};
+// manager.onProgress = function (url, itemsLoaded, itemsTotal) {
+// 	var bar = new ProgressBar.Circle(pbc, {
+//     color: '#aaa',
+//     // This has to be the same size as the maximum width to
+//     // prevent clipping
+//     strokeWidth: 6,
+//     trailWidth: 3,
+//     easing: 'easeInOut',
+//     duration: (itemsLoaded/itemsTotal)*100,
+//     text: {
+//         autoStyleContainer: false
+//     },
+//     from: { color: '#ff00ff', width: 1 },
+//     to: { color: '#0000ff', width: 4 },
+//     // Set default step function for all animate calls
+//     step: function(state, circle) {
+//         circle.path.setAttribute('stroke', state.color);
+//         circle.path.setAttribute('stroke-width', state.width);
+          
+//         var value = Math.round(circle.value() * 100);
+//         if (value === 100) {
+//         circle.setText('Loaded');
+//         } else {
+//         circle.setText(value);
+//         }
+          
+//     }
+//     });
+//     bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+//     bar.text.style.fontSize = '2rem';
+          
+//     bar.animate(1.0);  // Number from 0.0 to 1.0
+// };
 
-manager.onError = function ( url ) {
-	document.write(`${url} loading failed.`);
-};
+// manager.onLoad = function ( url, itemsLoaded, itemsTotal ) {
+// 	console.log(`Started loading file: ${url} \nloaded ${itemsLoaded} of ${itemsTotal}`);
+// };
+
+// manager.onError = function ( url ) {
+// 	document.write(`${url} loading failed.`);
+// };
 
 //Yıldız ekleme fonksiyonu
 function addStar(){
@@ -283,48 +311,30 @@ function addStar(){
     });
 
 //shooting star olur gibi
-// function getXAxis(){
-//     let x = Math.round(Math.random(1200, 1920));
-//     return x;
-// }
+function randomShootingStar(){
+    const shootingStarGeo = new THREE.SphereGeometry(10);
+    const shootingStarMat = new THREE.MeshBasicMaterial(
+        {
+            color: 0xfff000
+        }
+    );
+    const shootingStar = new THREE.Mesh(shootingStarGeo, shootingStarMat);
+    shootingStar.position.x = 1;
+    // shootingStar.position.set(x,y,z);
+    scene.add(shootingStar);
+    console.log("arfaef")
+}
 
-// function getYAxis(){
-//     let y = Math.round(Math.random(-1080, 1080));
-//     return y;
-// }
+function shootingStarTimer(){
+    let d = new Date();
+    let seconds = d.getSeconds();
 
-// function getZAxis(){
-//     let z = Math.round(Math.random(-1080, 1080));
-//     return z;
-// }
-
-// function randomShootingStar(){
-//     const shootingStarGeo = new THREE.SphereGeometry(10);
-//     const shootingStarMat = new THREE.MeshBasicMaterial(
-//         {
-//             color: 0xfff000
-//         }
-//     );
-//     const shootingStar = new THREE.Mesh(shootingStarGeo, shootingStarMat);
-//     const x = getXAxis();
-//     const y = getYAxis();
-//     const z = getZAxis();
-//     shootingStar.position.x = 11;
-//     // shootingStar.position.set(x,y,z);
-//     scene.add(shootingStar);
-//     console.log("arfaef")
-// }
-
-// function shootingStarTimer(){
-//     let d = new Date();
-//     let seconds = d.getSeconds();
-
-//     if(seconds % 3 == 0){
-//         randomShootingStar();
-//         console.log("asdfdf");
-//     }
-// }
-// shootingStarTimer();
+    if(seconds % 3 == 0){
+        randomShootingStar();
+        console.log("asdfdf");
+    }
+}
+shootingStarTimer();
 
 
 
